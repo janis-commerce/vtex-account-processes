@@ -8,3 +8,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Build Status, Coverage Status, NPM Publish Github's Workflows
+- vtex-account-processes lib
