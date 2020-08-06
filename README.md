@@ -110,7 +110,7 @@ Response: {
 */
 
 ```
-* Send with an Start Date, and error status, and VTEX-Commerce is failing
+* Send with a Start Date, and error status, and VTEX-Commerce is failing
 
 ```js
 
