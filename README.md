@@ -71,7 +71,11 @@ Now, there are 2 options
 
 ```js
 
-const response = await vtexAccountProcess.send('5dea9fc691240d00084083f8', 'import-readme', VtexAccountProcesses.statuses.pending)
+const response = await vtexAccountProcess.send(
+    '5dea9fc691240d00084083f8',
+    'import-readme',
+    VtexAccountProcesses.statuses.pending
+)
 
 /*
 Response: {
