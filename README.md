@@ -57,10 +57,21 @@ You can get the valid Statuses using:
         * `processing`
         * `success`
         * `error`
-        
+
  ## Content
- 
+
 This is used to keep an extra information in Account Process API, like a log.
+
+In the process:
+
+```js
+await vtexAccountProcess.send(
+    '5dea9fc691240d00084083f8',
+    'import-readme',
+    VtexAccountProcesses.statuses.pending,
+    { message: 'Start Importing Categories from VTEX' } // CONTENT
+);
+```
 
 In Vtex-Commerce:
 
@@ -74,6 +85,28 @@ Now, there are 2 options
 * `endDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the end of the process
 
 This is use to set in Account-Process API these properties.
+
+In the process:
+
+```js
+// Start the process in 31/12/1969 21:00hs
+await vtexAccountProcess.send(
+    '5dea9fc691240d00084083f8',
+    'import-readme',
+    VtexAccountProcesses.statuses.pending,
+    null,
+    { startDate: true }
+);
+
+// Finish the process in 05/08/2020 11:57hs
+await vtexAccountProcess.send(
+    '5dea9fc691240d00084083f8',
+    'import-readme',
+    VtexAccountProcesses.statuses.success,
+    null,
+    { endDate: true }
+);
+```
 
 In Vtex-Commerce:
 
