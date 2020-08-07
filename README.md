@@ -57,6 +57,14 @@ You can get the valid Statuses using:
         * `processing`
         * `success`
         * `error`
+        
+ ## Content
+ 
+This is used to keep an extra information in Account Process API, like a log.
+
+Example:
+
+![account-process-content](https://user-images.githubusercontent.com/39351850/89668364-018dbb00-d8b4-11ea-8bbd-b19a2f223056.png)
 
 ## :clock1: Options
 
@@ -64,6 +72,12 @@ Now, there are 2 options
 
 * `startDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the start of the process
 * `endDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the end of the process
+
+This is use to set in Account-Process API these properties.
+
+Example:
+
+![account-process-dates](https://user-images.githubusercontent.com/39351850/89668016-875d3680-d8b3-11ea-8ee3-490253a34894.png)
 
 ## :arrow_forward: Usage
 
