@@ -37,11 +37,11 @@ const vtexAccountProcess = session.getSessionInstance(VtexAccountProcesses);
     * **Async**
     * Description: Update `processName` for `accountId` in VTEX-Commerce with `status`.
     * Parameters:
-        * `accountId` : *STRING* VTEX Account ID in VTEX-Commerce
+        * `accountId` : *OBJECT-ID* VTEX Account ID in VTEX-Commerce
         * `processName` : *STRING* name of the process
         * `status` : *STRING* new Status for that process
-        * `content` : *OBJECT*, **OPTIONAL**, Extra Data for that process, for example a message
-        * `options` : *OBJECT*, **OPTIONAL**, Extra Options, for example start Date
+        * `content` : *OBJECT*, **OPTIONAL**, Extra Data you want to add for that process, whatever you want to save, for example a message, or an error stack, etc.
+        * `options` : *OBJECT*, **OPTIONAL**, To add the Start Date or an End Date
     * Returns: *OBJECT*
         * `statusCode`: HTTP Status code of the call to VTEX-Commerce
         * `body`: Body response
@@ -62,8 +62,8 @@ You can get the valid Statuses using:
 
 Now, there are 2 options
 
-* `startDate`: *BOOLEAN*, to add an Date-Now ISO-String, for marking the start of the process
-* `endDate`: *BOOLEAN*, to add an Date-Now ISO-String, for marking the end of the process
+* `startDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the start of the process
+* `endDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the end of the process
 
 ## :arrow_forward: Usage
 
@@ -103,7 +103,7 @@ const response = await vtexAccountProcess.send(
 Response: {
     statusCode: 404,
     body: {
-        message: 'Account not foudn'
+        message: 'Account not found'
     }
 }
 
