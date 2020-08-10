@@ -58,6 +58,13 @@ You can get the valid Statuses using:
         * `success`
         * `error`
 
+| status | using package | view in vtex-commerce |
+|------|-----------------|-----------------------|
+| pending | `VtexAccountProcesses.statuses.pending` | ![account-process-status-pending](https://user-images.githubusercontent.com/39351850/89794239-23c64980-dafd-11ea-8f1c-9e9d593b829e.png) |
+| processing | `VtexAccountProcesses.statuses.processing` | ![account-process-status-processing](https://user-images.githubusercontent.com/39351850/89794244-2628a380-dafd-11ea-9445-b91831f70c37.png) |
+| success | `VtexAccountProcesses.statuses.success` | ![account-process-status-success](https://user-images.githubusercontent.com/39351850/89794248-288afd80-dafd-11ea-839a-91a47a28e8fd.png) |
+| error | `VtexAccountProcesses.statuses.error` | ![account-process-status-error](https://user-images.githubusercontent.com/39351850/89794254-2aed5780-dafd-11ea-9287-72c2bd61b41a.png) |
+
  ## Content
 
 This is used to keep an extra information in Account Process API, like a log.
@@ -81,8 +88,8 @@ In Vtex-Commerce:
 
 Now, there are 2 options
 
-* `startDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the start of the process
-* `endDate`: *BOOLEAN*, to add an Date-Now ISO-String, for indicate the end of the process
+* `startDate`: *BOOLEAN*, to add an Date-Now ISO-String, to indicate the start of the process
+* `endDate`: *BOOLEAN*, to add an Date-Now ISO-String, to indicate the end of the process
 
 This is use to set in Account-Process API these properties.
 
